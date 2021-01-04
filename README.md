@@ -27,8 +27,6 @@ We make a pretrained and fine-tuned model available on our S3.
 
 ## Using the training script
 
-The training script can be used in single GPU or multi GPU settings:
-
 ```bash
 python train.py --dataset_path ../followML_candidates.json --model_checkpoint gpt2 --train_batch_size 2 --valid_batch_size 2  # Single GPU training
 ```
