@@ -1,6 +1,6 @@
 # followQG
 
-This repo contains the code accompanying the paper [Automatic Follow-up Question Generation for Asynchronous Interviews](https://intellang.github.io/papers/3-IntelLanG_2020_paper_3.pdf) published in IntelLang workshop of ECAI 2020.
+This repo contains the code accompanying the paper [Automatic Follow-up Question Generation for Asynchronous Interviews](https://intellang.github.io/papers/3-IntelLanG_2020_paper_3.pdf) published in IntelLang workshop of ECAI 2020 and its extended version [Improving Asynchronous Interview Interaction with Follow-up Question Generation](https://dx.doi.org/10.9781/ijimai.2021.02.010).
 
 This codebase contains training and testing scripts along with the in-domain interview follow-up question dataset that can be used to train a follow-up question generation model. 
 
@@ -65,13 +65,22 @@ top_p | `float` | `0.9` | Nucleus filtering (top-p) before sampling (`<=0.0`: no
 If you use this code in your research, you can cite our IntelLang workshop [paper](https://intellang.github.io/papers/3-IntelLanG_2020_paper_3.pdf):
 
 ```bash
-@inproceedings{intellang,
- title={Automatic Follow-up Question Generation for Asynchronous Interviews},
- author={Pooja {Rao S B} and Manish Agnihotri and Dinesh Babu Jayagopi},
- booktitle={Proceedings of the 1st Workshop on Intelligent Information Processing and Natural Language Generation, ECAI},
- url={https://intellang.github.io/papers/3-IntelLanG_2020_paper_3.pdf},
- year={2020}
+@article{2902,
+  keywords = {Asynchronous Video Interview, Language Model, Question Generation, Conversational Agent, Follow-up Question Generation},
+  author = {Pooja S. B. Rao and Manish Agnihotri and Dinesh Babu Jayagopi},
+  title = {Improving Asynchronous Interview Interaction with Follow-up Question Generation},
+  abstract = {The user experience of an asynchronous video interview system, conventionally is not reciprocal or conversational. Interview applicants expect that, like a typical face-to-face interview, they are innate and coherent. We posit that the planned adoption of limited probing through follow-up questions is an important step towards improving the interaction. We propose a follow-up question generation model (followQG) capable of generating relevant and diverse follow-up questions based on the previously asked questions, and their answers. We implement a 3D virtual interviewing system, Maya, with capability of follow-up question generation. Existing asynchronous interviewing systems are not dynamic with scripted and repetitive questions. In comparison, Maya responds with relevant follow-up questions, a largely unexplored feature of irtual interview systems. We take advantage of the implicit knowledge from deep pre-trained language models to generate rich and varied natural language follow-up questions. Empirical results suggest that followQG generates questions that humans rate as high quality, achieving 77% relevance. A comparison with strong baselines of neural network and rule-based systems show that it produces better quality questions. The corpus used for fine-tuning is made publicly available.},
+  year = {2021},
+  journal = {International Journal of Interactive Multimedia and Artificial Intelligence},
+  volume = {6},
+  number = {5},
+  pages = {79-89},
+  month = {03/2021},
+  issn = {1989-1660},
+  url = {https://www.ijimai.org/journal/sites/default/files/2021-02/ijimai_6_5_8.pdf},
+  doi = {10.9781/ijimai.2021.02.010},
 }
+
 ```
 
 ## Reference
